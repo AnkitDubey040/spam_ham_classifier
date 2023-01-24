@@ -13,6 +13,7 @@ raw_data
 saved_models
 sensor.egg-info
 *.egg-info
+.env
 # Distribution / packaging
 .Python
 build/
