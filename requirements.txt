@@ -1,1 +1,8 @@
 pymongo
+pandas
+numpy
+scikit_learn
+numpy
+python-dotenv
+dnspython
+-e .
