@@ -1,15 +1,23 @@
-# neurolab-mongo-python
+# sms-spam-ham-detector 📱
 
-![image](https://user-images.githubusercontent.com/57321948/196933065-4b16c235-f3b9-4391-9cfe-4affcec87c35.png)
+A simple web app to detect SMS as spam or ham(not spam) using Python Flask and Naïve Bayes classifiers.
 
-### Step 1 - Install the requirements
 
-```bash
-pip install -r requirements.txt
-```
+### Blog at:[Towards Data Science](https://towardsdatascience.com/the-ultimate-guide-to-sms-spam-or-ham-detector-aec467aecd85)
 
-### Step 2 - Run main.py file
 
-```bash
-python main.py
-```
+> The approach for this project aligns more with Artificial Intelligence (COMP 472) course.
+
+
+![sms-spam-ham-detector](https://user-images.githubusercontent.com/25213850/88257771-3f98b580-ccde-11ea-9e03-c1b5323ab387.gif)
+
+
+
+**Live at:** [Spam or Ham | SMS Detector](https://sms-spam-ham-detector.herokuapp.com)
+
+
+
+# Sneak Peek
+
+
+![Web Screenshot](/images/webscreen.png)

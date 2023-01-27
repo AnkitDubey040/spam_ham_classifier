@@ -18,4 +18,5 @@ websockets==10.3
 wincertstore==0.2
 PyYAML
 apache-airflow
+gunicorn
 -e .

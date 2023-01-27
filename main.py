@@ -1,13 +1,16 @@
-#from sensor.pipeline.training_pipeline import start_training_pipeline
-#from sensor.pipeline.batch_prediction import start_batch_prediction
-from spam_ham.logger import logging
-from spam_ham.exception import SensorException
-import sys,os
-from spam_ham.utils import get_collection_as_dataframe
+# This is a sample Python script.
 
-if __name__=="__main__":
-    try:
-        get_collection_as_dataframe(database_name = "spam_ham",collection_name = "message")
-     
-    except Exception as e:
-      raise SensorException(e,sys)
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
