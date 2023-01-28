@@ -1,7 +1,7 @@
 import pymongo
 import pandas as pd
 import json
-from spam_ham.config import mongo_client
+from data_load_fetch.config import mongo_client
 from spam_ham.logger import logging
 
 # Provide the mongodb localhost url to connect python to mongodb.
@@ -17,7 +17,7 @@ if __name__ =="__main__":
     df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
     df['label'] = df['type'].map({'ham': 0, 'spam': 1})
     print(f"After Cleanning the Rows and Columns are: {df.shape}")
-    logging.info(f"fetching dataframe")
+    #logging.info(f"fetching dataframe")
     # convert data into json
     df.reset_index(drop = True,inplace = True)
     
