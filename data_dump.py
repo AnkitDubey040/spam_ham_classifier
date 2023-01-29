@@ -1,8 +1,8 @@
 import pymongo
 import pandas as pd
 import json
-from data_load_fetch.config import mongo_client
-from spam_ham.logger import logging
+from config import mongo_client
+from logger import logging
 
 # Provide the mongodb localhost url to connect python to mongodb.
 client = pymongo.MongoClient("mongodb://localhost:27017/neurolabDB")

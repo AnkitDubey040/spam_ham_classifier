@@ -2,7 +2,7 @@ body{
 	font:15px/1.5 Arial, Helvetica,sans-serif;
 	padding: 0px;
 	background-color:#f4f3f3;
-	background-image:url("bg2.jpg");
+	background-image:url("/config/workspace/static/bg2.jpg");
 }
 
 .container{
@@ -22,7 +22,7 @@ header{
 
 .main-header{
 			text-align:center;
-			background-color: blue;
+			background-color:#0000FF;
 			height:100px;
 			width:100%;
 			margin:0px;
