@@ -1,11 +1,10 @@
 import pymongo
 import pandas as pd
 import json
-from config import mongo_client
 from logger import logging
 
 # Provide the mongodb localhost url to connect python to mongodb.
-client = pymongo.MongoClient("mongodb://localhost:27017/neurolabDB")
+mongo_client = pymongo.MongoClient("mongodb+srv://ankitdubey:ankitdubey04@cluster0.ictsq1s.mongodb.net/?retryWrites=true&w=majority")
 
 DATA_FILE_PATH = "/config/workspace/spam.csv"
 DATABASE_NAME = "spam_ham"
@@ -17,7 +16,7 @@ if __name__ =="__main__":
     df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
     df['label'] = df['type'].map({'ham': 0, 'spam': 1})
     print(f"After Cleanning the Rows and Columns are: {df.shape}")
-    #logging.info(f"fetching dataframe")
+    logging.info(f"fetching dataframe")
     # convert data into json
     df.reset_index(drop = True,inplace = True)
     
