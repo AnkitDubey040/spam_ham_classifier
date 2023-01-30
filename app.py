@@ -15,9 +15,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
 	   
-		df = pd.read_csv("spam.csv", encoding="latin-1")
-		df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
-		df['label'] = df['type'].map({'ham': 0, 'spam': 1})
+		df = pd.read_csv("spam_ham.csv", encoding="latin-1")
 		X = df['text']
 		y = df['label']
 		cv = CountVectorizer()

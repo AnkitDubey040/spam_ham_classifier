@@ -15,3 +15,6 @@ A simple web app to detect SMS as spam or ham(not spam) using Python Flask and N
 
 
 ![Web Screenshot](/images/webscreen.png)
+
+
+To run the project in your local system :

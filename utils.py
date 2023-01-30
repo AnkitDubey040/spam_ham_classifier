@@ -1,7 +1,5 @@
 import pandas as pd
-from data_dump import mongo_client
-from logger import logging
-from exception import SensorException
+from data_dump import mongo_client,DATABASE_NAME ,COLLECTION_NAME
 import os,sys 
 import json
 import numpy as np
@@ -18,16 +16,11 @@ def get_collection_as_dataframe(database_name:str , collection_name:str)->pd.Dat
     =========================================================
     return Pandas dataframe of a collection
     """
-    try:
-        logging.info(f"Reading data from database: {database_name} and collection: {collection_name}")
-        df = pd.DataFrame(list(mongo_client[database_name][collection_name].find()))
-        logging.info(f"Found columns: {df.columns}")
-        if "_id" in df.columns:
-            #logging.info(f"Dropping column: _id ")
-            df = df.drop("_id",axis=1)
-        logging.info(f"Row and columns in df: {df.shape}")
-        return df
-    except Exception as e:
-        raise SensorException(e, sys)
-df = get_collection_as_dataframe(database_name="spam_ham", collection_name = "messages")
+
+    df = pd.DataFrame(list(mongo_client[database_name][collection_name].find()))
+    if "_id" in df.columns:
+        df = df.drop("_id",axis=1)
+    return df
+df = get_collection_as_dataframe(database_name=DATABASE_NAME, collection_name = COLLECTION_NAME)
 print(df)
+df.to_csv("sapm_ham.csv", index=False)
