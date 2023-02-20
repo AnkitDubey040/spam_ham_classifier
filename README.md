@@ -16,23 +16,19 @@ In order to perform an experiment I've combined two datasets (Enron email spam/h
 
 ## How It Does:
 Extract the text and the target class from the dataset. Extract the features of the test using TF-IDF vectorizer for the Input features.Split the skewed data into shuffled sets using stratified shuffle split in sklearn library. Use standard classifiers to classify the data into spam or ham.
-<p align="center">
-  <br>
-  <img src="https://github.com/ShubhamPy/Spam-Classifier/blob/master/Screenshots/modelLearning.png">
-</p>
 
 ### Built With
 
 1. `Flask`
-2.`Python 3.7`
+2. `Python 3.7`
 3. `Scikit-Learn`
 4. `Numpy`
 5. `Pandas`
 6. `Matplotlib`
 7. `Seaborn`
 4. `HTML5`
-5.`CSS`
-6.` Bootstrap-v4`
+5. `CSS`
+6. `Bootstrap-v4`
 7. `Love`
 
 ### Installing/ Things you need to install the Web App and how to set up the project locally?
