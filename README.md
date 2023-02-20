@@ -1,13 +1,8 @@
 # sms-spam-ham-detector 📱
 
-A simple web app to detect SMS as spam or ham(not spam) using Python Flask and Naïve Bayes classifiers.
-<h1 align="center">
-  <br>
-  <a href="https://github.com/ShubhamPy/Spam-Classifier"><img src="https://github.com/ShubhamPy/Spam-Classifier/blob/master/Screenshots/logo1.png" alt="SpamClassifier"></a>
-  <br>
-  SpamClassifier
-  <br>
-</h1>
+A simple web app to detect SMS as spam or ham(not spam) using Python Flask and Naïve Bayes classifiers.SpamHam is a text-classification app which detects whether the message/email is spam or not. I've used Naive-Bayes along with NLP (TF-IDF, Bag of Words and more).
+In order to perform an experiment I've combined two datasets (Enron email spam/ham and SMS spam classification) into one to gather more data.
+
 <h4 align="center">In this project I build a model for classifying the SMS/Email into spam or ham through the text of the SMS/Email using standard classifiers.</h4>
 
 
@@ -19,55 +14,49 @@ A simple web app to detect SMS as spam or ham(not spam) using Python Flask and N
 **Live at:** [Spam or Ham | SMS Detector](https://sms-spam-ham-detector.herokuapp.com)
 
 
-
-# Sneak Peek
-
-
-![Web Screenshot](/images/webscreen.png)
-
 ## How It Does:
 Extract the text and the target class from the dataset. Extract the features of the test using TF-IDF vectorizer for the Input features.Split the skewed data into shuffled sets using stratified shuffle split in sklearn library. Use standard classifiers to classify the data into spam or ham.
 <p align="center">
   <br>
   <img src="https://github.com/ShubhamPy/Spam-Classifier/blob/master/Screenshots/modelLearning.png">
 </p>
-## Prerequisites:
-I would highly recommend that before the hack night you have some kind of toolchain and development environment already installed and ready. If you have no idea where to start with this, try a combination like:
--  `Python`
--  `scikit-learn` / `sklearn`
--  `Pandas`
--  `NumPy`
--  `matplotlib`
--  An environment to work in - something like `Jupyter` or `Spyder`
-For Linux people, your package manager should be able to handle all of this. If it somehow can't, see if you can at least install Python and pip and then use pip to install the above packages.
 
-## Dataset:
-The SMS/Email Spam Collection is a set of SMS tagged messages that have been collected for SMS/Email Spam research. It contains one set of SMS messages in English of 5,567 messages, tagged according being ham (legitimate) or spam.
-> You can collect raw dataset from [here](https://raw.githubusercontent.com/ShubhamPy/Spam-Classifier/master/spam.tsv).
+### Built With
+
+1. `Flask`
+2.`Python 3.7`
+3. `Scikit-Learn`
+4. `Numpy`
+5. `Pandas
+6. `Matplotlib`
+7. `Seaborn`
+4. `HTML5`
+5.`CSS`
+6.` Bootstrap-v4`
+7. `Love`
+
+### Installing/ Things you need to install the Web App and how to set up the project locally?
+
+1. `Python3`
+2. `Pip`
+3. `Flask`
+4. `Conda`
+
+#### Steps
+- Make a virtual environment using "conda create -n envname python=3.7 pip"
+- source activate envname (for mac/linux) | activate envname (for windows)
+- Download or clone this repo 
+- pip install -r requirements.txt
+- Run the app using python manage.py runserver
 
 The files contain one message per line. Each line is composed by two columns:
 - `Class`- contains the label (ham or spam) 
 - `Message` - contains the raw text.
 
-## ModelPipeline:
-<p align="center">
-  <br>
-  <img src="https://github.com/ShubhamPy/Spam-Classifier/blob/master/Screenshots/modelLayout.jpg">
-</p>
+### Milestones for version 2
+- Implement login and tailor experience for each user
+- Collect the result reported by user for false classification of messages/email
+- Model will self-learn from the reported data
 
-## Components:
--  Using TF-IDF for feature extraction of the text data for the messages.
--  Use splits for skewed data(Since the number of ham are far more than the number of spam messages,the data is skewed)
--  Use stratified shuffled split for the split of skewed data.
--  Use different standard classifiers for classification of the SMS.
--  Compare the accuracy of various classifiers using standard classification metrics
-
-## AccuracyResult:
-<p align="center">
-  <br>
-  <img src="https://github.com/ShubhamPy/Spam-Classifier/blob/master/Screenshots/predictionScore.png">
-</p>
-
-## Future Scope:
-- Adding this feature in a dynamic website which supports contact-us typo feature.
-- Show live user inputs for Ham and Spam  .
+Made by
+**Ankit Dubey**  - [linkedin.com/AnkitDubey](https://www.linkedin.com/in/ankit-dubey-a6b522212/)
