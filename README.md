@@ -27,7 +27,7 @@ Extract the text and the target class from the dataset. Extract the features of 
 2.`Python 3.7`
 3. `Scikit-Learn`
 4. `Numpy`
-5. `Pandas
+5. `Pandas`
 6. `Matplotlib`
 7. `Seaborn`
 4. `HTML5`
